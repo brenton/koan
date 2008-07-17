@@ -10,6 +10,7 @@ Group: Applications/System
 Requires: mkinitrd
 Requires: syslinux
 Requires: python >= 2.2
+Requires: python-virtinst 
 BuildRequires: python-devel
 %if 0%{?fedora} >= 8
 BuildRequires: python-setuptools-devel
