@@ -57,7 +57,7 @@ def start_install(name=None, ram=None, disks=None, mac=None,
     if arch is not None and arch.lower() == "x86":
         arch = "i686"
 
-    guest = virtinst.FullVirtGuest(hypervisorURI="qemu:///system",type=vtype, arch=arch)
+    guest = virtinst.FullVirtGuest(hypervisorURI="qemu:///system",type=vtype)
 
     if not profile_data.has_key("file"):
         # images don't need to source this 
